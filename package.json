@@ -1,0 +1,12 @@
+{
+  "name": "html-project-1-smoke",
+  "version": "1.0.0",
+  "description": "Puppeteer smoke tests for the static HTML project",
+  "private": true,
+  "scripts": {
+    "smoke": "node puppeteer-smoke.js"
+  },
+  "devDependencies": {
+    "puppeteer": "^21.0.0"
+  }
+}

@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>My First HTML Webpage</title>
+    <!-- Highlight.js stylesheet for syntax highlighting in code modals -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+
+  <body>
+    <!-- Responsive Navigation Bar -->
+    <nav class="navbar">
+      <div class="navbar-brand">
+        <button id="darkModeToggle" title="Toggle dark mode">🌙</button>
+        Web Dev Journey
+      </div>
+      <ul class="navbar-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#roadmap">Roadmap</a></li>
+        <li><a href="#tips">Tips+</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+      </ul>
+      <button class="navbar-toggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+
+    <div id="home" class="fade-in section">
+      <h1>Welcome — You Can Learn Web Development</h1>
+      <h2>My Journey — A Beginner Friendly Story</h2>
+      <p>
+        I didn't study computer science. I started with curiosity and a
+        six-month bootcamp about two years ago, then kept learning on my own by
+        building tiny projects and solving small problems every day. No degree
+        required — a little curiosity and consistent practice took me a long
+        way.
+      </p>
+      <p>
+        This site is for people just like you: beginners without formal CS
+        degrees who want concrete steps, small exercises, and the confidence to
+        ship real work. You’ll find short, practical explanations, copy-and-run
+        examples, and honest notes on what helped me learn faster.
+      </p>
+      <p>
+        Join me — try the examples, break them, fix them, and share what you
+        learn. I’ll keep sharing what I discover so we can move forward
+        together.
+      </p>
+      <p style="text-align: center; margin-top: 1rem">
+        <a href="#exercise" class="cta-button">Start the First Exercise</a>
+      </p>
+    </div>
+
+    <!-- First Exercise Section -->
+    <div id="exercise" class="fade-in section">
+      <h2>First Exercise — Editable Sandbox</h2>
+      <p>
+        Copy the HTML below into the sandbox, edit it, then click
+        <strong>Run</strong> to preview.
+      </p>
+      <div class="sandbox-controls">
+        <textarea id="sandboxInput" rows="6">
+&lt;h2&gt;Hello from the sandbox&lt;/h2&gt;
+&lt;p&gt;Edit this HTML and click Run to preview.&lt;/p&gt;</textarea
+        >
+        <div class="sandbox-actions">
+          <button id="runSandbox">Run</button>
+          <button id="resetSandbox">Reset</button>
+        </div>
+      </div>
+      <div id="sandboxPreview" class="sandbox-preview" aria-live="polite"></div>
+      <div
+        id="sandboxConsole"
+        class="sandbox-console"
+        aria-live="polite"
+        style="
+          margin-top: 0.75rem;
+          font-family: monospace;
+          font-size: 0.9rem;
+          background: #0f1720;
+          color: #e6ffed;
+          padding: 0.75rem;
+          border-radius: 8px;
+          min-height: 80px;
+          display: none;
+          overflow: auto;
+        "
+      ></div>
+    </div>
+
+    <div id="roadmap" class="slide-up section">
+      <h2>A Practical, Degree-Free Roadmap to Web Development</h2>
+      <ol>
+        <li>
+          <strong>Start with the Basics:</strong> Learn HTML, CSS, and basic
+          JavaScript. Build static pages and gradually add interactivity — one
+          concept at a time.
+        </li>
+        <li>
+          <strong>Finish Small Projects:</strong> Aim to complete small, useful
+          projects (a personal site, a simple todo list, a quiz). Each finished
+          project teaches planning, debugging, and deployment.
+        </li>
+        <li>
+          <strong>Use Version Control:</strong> Learn Git and host work on
+          GitHub. A public portfolio — even small projects — demonstrates
+          progress and gives you material to discuss in interviews.
+        </li>
+        <li>
+          <strong>Practice Regularly:</strong> Short, focused practice beats
+          occasional marathon sessions. Read docs, follow tutorials, then remix
+          the examples to make them yours.
+        </li>
+        <li>
+          <strong>Learn by Teaching:</strong> Share what you build — blog posts,
+          short videos, or code snippets. Teaching clarifies thinking and builds
+          confidence.
+        </li>
+        <li>
+          <strong>Prepare for Jobs:</strong> Build a small portfolio, practice
+          basic interview questions, and apply widely to junior roles and
+          internships. Real-world problems accelerate learning more than
+          coursework alone.
+        </li>
+      </ol>
+      <p>
+        No single path fits everyone. Stay curious, iterate on projects, ask for
+        feedback, and celebrate small wins. The most important thing is to
+        produce things you can show — that’s how opportunity finds you.
+      </p>
+    </div>
+
+    <div id="tips" class="fade-in section">
+      <h2>Tips & Resources</h2>
+      <ul>
+        <li>
+          Use <a href="https://code.visualstudio.com/">VS Code</a> for editing
+          code.
+        </li>
+        <li>
+          Try <a href="https://jsbin.com/">JSBin</a> or
+          <a href="https://codepen.io/">CodePen</a> for quick experiments.
+        </li>
+        <li>
+          Learn more at
+          <a href="https://developer.mozilla.org/en-US/docs/Learn"
+            >MDN Web Docs</a
+          >.
+        </li>
+        <li>
+          Deploy for free with
+          <a href="https://pages.github.com/">GitHub Pages</a> or
+          <a href="https://www.netlify.com/">Netlify</a>.
+        </li>
+      </ul>
+    </div>
+
+    <!-- Gallery Section (moved up) -->
+    <div id="gallery" class="fade-in section">
+      <h2>Code Samples Gallery</h2>
+      <div class="gallery-container">
+        <div class="code-card" role="figure" aria-label="HTML example">
+          <div class="code-card-title">HTML</div>
+          <div class="card-controls">
+            <button class="copy-btn" aria-label="Copy HTML code">Copy</button>
+            <button class="view-btn" aria-label="View HTML code">View</button>
+          </div>
+          <pre><code class="code-snippet language-html">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;body&gt;
+    &lt;h1&gt;Hello&lt;/h1&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+        </div>
+
+        <div class="code-card" role="figure" aria-label="CSS example">
+          <div class="code-card-title">CSS</div>
+          <div class="card-controls">
+            <button class="copy-btn" aria-label="Copy CSS code">Copy</button>
+            <button class="view-btn" aria-label="View CSS code">View</button>
+          </div>
+          <pre><code class="code-snippet language-css">body { background: #f8fafc; color: #222; }</code></pre>
+        </div>
+
+        <div class="code-card" role="figure" aria-label="JavaScript example">
+          <div class="code-card-title">JavaScript</div>
+          <div class="card-controls">
+            <button class="copy-btn" aria-label="Copy JavaScript code">
+              Copy
+            </button>
+            <button class="view-btn" aria-label="View JavaScript code">
+              View
+            </button>
+          </div>
+          <pre><code class="code-snippet language-javascript">console.log('Hello, world!');</code></pre>
+        </div>
+      </div>
+    </div>
+
+    <!-- Video & Map Section -->
+    <div id="media" class="slide-up section">
+      <h2>HTML Youtube Video & Map</h2>
+      <div class="media-content">
+        <div class="video-embed">
+          <iframe
+            width="360"
+            height="215"
+            src="https://www.youtube.com/embed/qz0aGYrrlhU"
+            title="YouTube video"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <div class="map-embed">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.835434509374!2d144.9630579153169!3d-37.8162797797517!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65d43f1f8e7fb%3A0x5045675218ce6e0!2sMelbourne%20VIC%2C%20Australia!5e0!3m2!1sen!2sus!4v1633072800000!5m2!1sen!2sus"
+            width="360"
+            height="215"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </div>
+    </div>
+
+    <!-- Contact Form Section -->
+    <div id="contact" class="slide-up section">
+      <h2>Contact Me</h2>
+      <form
+        action="https://formspree.io/f/xkgvdpwj"
+        method="POST"
+        class="contact-form"
+        id="contactForm"
+        data-formspree-endpoint="https://formspree.io/f/xkgvdpwj"
+      >
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+      <div
+        id="contactFeedback"
+        aria-live="polite"
+        style="margin-top: 0.75rem"
+      ></div>
+      <p class="form-note">
+        Powered by <a href="https://formspree.io/" target="_blank">Formspree</a>
+      </p>
+    </div>
+
+    <!-- Accordion Section (moved down) -->
+    <div id="accordion" class="fade-in section">
+      <h2>Frequently Asked Questions</h2>
+      <div class="accordion-item">
+        <button class="accordion-toggle">What is this site about?</button>
+        <div class="accordion-content">
+          <p>
+            This site showcases a professional, modern static web page with
+            interactive features and a clean design.
+          </p>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <button class="accordion-toggle">How can I contact you?</button>
+        <div class="accordion-content">
+          <p>Use the contact form below to send a message directly.</p>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <button class="accordion-toggle">Can I see more projects?</button>
+        <div class="accordion-content">
+          <p>
+            Check back soon for more portfolio items and web development
+            resources!
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Social Media Links & Share Buttons -->
+    <footer class="social-footer fade-in section">
+      <h2>Connect & Share</h2>
+      <div class="social-links">
+        <a href="https://twitter.com/" target="_blank" aria-label="Twitter">
+          <img
+            src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/twitter.svg"
+            alt="Twitter"
+          />
+        </a>
+        <a href="https://facebook.com/" target="_blank" aria-label="Facebook">
+          <img
+            src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/facebook.svg"
+            alt="Facebook"
+          />
+        </a>
+        <a href="https://linkedin.com/" target="_blank" aria-label="LinkedIn">
+          <img
+            src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/linkedin.svg"
+            alt="LinkedIn"
+          />
+        </a>
+        <a href="https://github.com/" target="_blank" aria-label="GitHub">
+          <img
+            src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/github.svg"
+            alt="GitHub"
+          />
+        </a>
+        <a href="https://instagram.com/" target="_blank" aria-label="Instagram">
+          <img
+            src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg"
+            alt="Instagram"
+          />
+        </a>
+      </div>
+      <div class="share-buttons">
+        <button
+          onclick="window.open('https://twitter.com/intent/tweet?url='+encodeURIComponent(window.location.href),'_blank')"
+        >
+          Share on Twitter
+        </button>
+        <button
+          onclick="window.open('https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent(window.location.href),'_blank')"
+        >
+          Share on Facebook
+        </button>
+        <button
+          onclick="window.open('https://www.linkedin.com/shareArticle?mini=true&url='+encodeURIComponent(window.location.href),'_blank')"
+        >
+          Share on LinkedIn
+        </button>
+        <button
+          onclick="window.open('https://www.instagram.com/?url='+encodeURIComponent(window.location.href),'_blank')"
+        >
+          Share on Instagram
+        </button>
+      </div>
+      <div class="copyright-row" style="margin-top:1rem; text-align:center;">
+        <small id="siteCopyright">© <span id="copyrightYear"></span> Web Dev Journey</small>
+      </div>
+    </footer>
+
+    <!-- Scroll-to-Top Button -->
+    <button id="scrollTopBtn" title="Go to top">&#8679;</button>
+
+    <!-- Highlight.js runtime -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+    <script src="script.js"></script>
+    <!-- Toast container -->
+    <div
+      id="toast"
+      aria-live="polite"
+      style="position: fixed; right: 20px; bottom: 24px; z-index: 12000"
+    ></div>
+  </body>
+</html>
