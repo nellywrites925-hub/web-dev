@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://nellywrites925-hub.github.io/web-dev/sitemap.xml
