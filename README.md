@@ -1,4 +1,4 @@
-# My First HTML Webpage
+# web-dev — My First HTML Webpage
 
 This is a small static site built with plain HTML, CSS, and vanilla JavaScript. It is intended as a beginner-friendly educational page with a small editable sandbox, code sample gallery, and responsive layout.
 
@@ -60,20 +60,7 @@ This project includes a client-side integration with Formspree so form submissio
 
 1. Go to https://formspree.io/ and sign up (or log in).
 2. Create a new form and follow the setup steps. Formspree will provide a form endpoint like `https://formspree.io/f/abcdxyz`.
-3. Replace the placeholder `action` in `index.html`'s contact form with your endpoint, or update the `data-formspree-endpoint` attribute on the `<form>` element. Example:
-
-```html
-<form
-  id="contactForm"
-  action="https://formspree.io/f/abcdxyz"
-  method="POST"
-  data-formspree-endpoint="https://formspree.io/f/abcdxyz"
->
-  <!-- form fields -->
-</form>
-```
-
-4. Optionally verify your email if Formspree requires it. After that, messages sent by visitors will be forwarded to your configured email address.
+3. Replace the placeholder `action` in `index.html`'s contact form with your endpoint, or update the `data-formspree-endpoint` attribute on the `<form>` element.
 
 Notes:
 
@@ -105,3 +92,4 @@ Notes:
 
 - Headless Puppeteer is used; the test is intended for local verification and quick CI checks.
 - If you host the site via `http://localhost:8000`, adjust the test script to point to that URL instead of the `file://` URL.
+
